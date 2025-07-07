@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins&display=swap');
+ body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+form {
+    width: 85%;
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 steelblue, 5px 4px 25px steelblue;
+    color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    left: 89px;
+    top: 30px;
+    touch-action: pan-y;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box1 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 15px 0;
+    background-color: lightgray;
+    font-size: medium;
+}
+
+.box1:focus {
+    font-size: medium;
+    border: none;
+    outline: none;
+}
+
+.box2 {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 15px 0;
+    background-color: lightgray;
+    font-size: medium;
+}
+
+.box2:focus {
+    font-size: medium;
+    border: none;
+    outline: none;
+}
+
+input:focus {
+    caret-color: blue;
+}
+
+.div1 {
+    display: inline-block;
+    width: 111%;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: blue;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Mobile devices */
+@media screen and (min-width:320px) and (max-width: 480px) {
+    form {
+        width: 85%;
+        position: relative;
+        box-sizing: border-box;
+        left: 30px;
+        top: 0;
+        touch-action: pan-y;
+    }
+    .div1 {
+        box-sizing: border-box;
+    }
+    .box2 {
+        width: 90%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    .box2:hover {
+        width: 90%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    .btn {
+        position: relative;
+        bottom: 5px;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    h1 {
+        margin-top: 0;
+    }
+}
+
+/* Galaxy fold */
+
+@media screen and (max-width:280px) {
+    form {
+        width: 85%;
+        position: absolute;
+        box-sizing: border-box;
+        left: 20px;
+        top: 0;
+        margin-top: 9px;
+        height: 94%;
+        touch-action: pan-y;
+    }
+    .div1 {
+        box-sizing: border-box;
+        height: fill-content;
+    }
+    .box2 {
+        width: 90%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .box2:hover {
+        width: 90%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    h1 {
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .btn {
+        position: relative;
+        padding: 5px;
+        border-radius: 15px;
+    }
+}
+
+/* iPads, Tablets */
+@media screen and (min-width:481px) and (max-width: 768px) {
+    form {
+        width: 85%;
+        position: relative;
+        box-sizing: border-box;
+        top: 0;
+        left: 55px;
+        touch-action: pan-y;
+    }
+  
+    h1 {
+        margin-top: 0;
+    }
+
+    .div1 {
+        box-sizing: border-box;
+    }
+    .box2 {
+        width: 90%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .btn {
+        position: relative;
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+    .box2:hover {
+        width: 90%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+}
+
+/* Small screens, laptops. */
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    form {
+        width: 85%;
+        position: relative;
+        box-sizing: border-box;
+        top: 0;
+        margin-top: 8px;
+        bottom: 0;
+        touch-action: pan-y;
+    }
+    h1 {
+        margin-top: 0;
+    }
+    .div1 {
+        box-sizing: border-box;
+    }
+    .box2 {
+        width: 90%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    .btn {
+        position: relative;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    .box2:hover {
+        width: 90%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+}
+
+/* Desktops, large screens */
+@media screen and (min-width:1025px) and (max-width: 1280px) {
+    form {
+        width: 85%;
+        position: relative;
+        box-sizing: border-box;
+        touch-action: pan-y;
+        top: 0;
+        margin-top: 18px;
+        height: 90%;
+        left: 0;
+        margin-left: 75px;
+    }
+    h1 {
+        margin-top: 0;
+    }
+    .div1 {
+        display: block;
+        box-sizing: border-box;
+    }
+    .box2 {
+        width: 90%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+     .btn {
+        position: relative;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    .box2:hover {
+        width: 90%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+}

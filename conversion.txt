@@ -1,0 +1,25 @@
+ttot - room rent - rcharge(html)
+
+fintot - gr. total - html not defined
+
+mepr - bed rent (delete)
+
+btot - meals - extra adding(suppose meal type = breakfast then btot = 400 (html not defined) )
+
+
+=> Login Form Requirements
+
+-> Username
+
+-> Password
+
+
+=> Sign in Form Requirements
+
+-> Username
+
+-> Password
+
+-> Email
+
+-> Phone Number

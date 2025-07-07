@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+
+<body>
+    <form action="action">
+        <h1>Payment</h1>
+        <label for="name">Payer name</label><br>
+        <input type="text" class="box1" name="name" id="name" placeholder="Enter payer name"  autocomplete="off"><br>
+        <label for="Pemail">Email</label><br>
+        <input type="email" class="box1" name="email" id="email" placeholder="Enter email" autocomplete="off"><br>
+        <label for="cardnum">Card number</label><br>
+        <input type="number" class="box1" name="number" id="number" placeholder="ex. 1234 1234 1234" autocomplete="off" maxlength="12"><br>
+
+        <div class="div1" id="exp">
+            <label for="cardex">Card expiry month</label><br>
+            <input class="box2" type="month" name="month" id="month" placeholder="MM"><br>
+        </div>
+        <div class="div1"><label for="cardCVV">CVV</label><br>
+            <input class="box2" type="number" name="cvv" id="CVC" placeholder="cvv" autocomplete="off" maxlength="3"><br>
+            <label for="charge">Room charge</label><br>
+            <input class="box2" type="number" name="charge" id="charge" placeholder="&#8377; charge" autocomplete="off" maxlength="3"><br>
+        </div>
+        <br><button class="btn" id="pay">Pay Now</button>
+    </form>
+    <script>
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.oninput = () => {
+                if(input.value.length > input.maxLength) {
+                    input.value = input.value.slice(0, input.maxLength);
+                }
+            };
+        });
+    </script>
+</body>
+
+</html>
